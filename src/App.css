@@ -1,0 +1,66 @@
+label,
+input,
+button {
+    font-size: 1.4rem;
+}
+
+.App {
+    min-height: 100vh;
+}
+
+.container_appheader {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+}
+
+
+.user-container {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    width: 100%;
+    max-width: 1200px;
+    gap: 2rem;
+    justify-content: center;
+    padding: 3rem;
+    margin: 0 auto;
+}
+
+.form-container {
+    position: fixed;
+    width: 100%;
+    min-height: 100vh;
+    background: #0003;
+    z-index: 1;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+}
+
+.close_form {
+    transform: translateX(-100%);
+}
+
+.App_btn {
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    background: #555A88;
+    border-radius: .4rem;
+
+    display: flex;
+    gap: 0.5rem;
+    transition: transform 200ms ease;
+}
+
+.App_btn:hover {
+    transform: scale(1.2);
+}
+
+.fa-user-plus {
+    font-size: 1.4rem;
+}
